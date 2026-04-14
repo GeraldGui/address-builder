@@ -8,6 +8,8 @@ public class Address {
 
         Scanner myObj = new Scanner(System.in);
 
+        StringBuilder address = new StringBuilder();
+
         String fullName;
 
         String billingStreet;
@@ -56,6 +58,38 @@ public class Address {
         shippingZip = myObj.nextInt();
         myObj.nextLine();
 
+        address.append(fullName);
+        address.append("\n");
+        address.append("\n");
 
+        address.append("Billing Address: ");
+        address.append("\n");
+        address.append(billingStreet);
+        address.append("\n");
+        address.append(billingCity);
+        address.append(", ");
+        address.append(billingState);
+        address.append(" ");
+        address.append(billingZip);
+        address.append("\n");
+        address.append("\n");
+
+        address.append("Shipping Address: ");
+        address.append("\n");
+        address.append(shippingStreet);
+        address.append("\n");
+        address.append(shippingCity);
+        address.append(", ");
+        address.append(shippingState);
+        address.append(" ");
+        address.append(shippingZip);
+
+        /*address.append(fullName + "\n\n");
+
+        address.append("Billing Address:\n" + billingStreet + "\n" + billingCity + ", " + billingState + " " + billingZip + "\n\n");
+
+        address.append("Shipping Address:\n" + shippingStreet + "\n" + shippingCity + ", " + shippingState + " " + shippingZip);*/
+
+        System.out.println(address.toString());
     }
 }
