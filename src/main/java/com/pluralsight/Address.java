@@ -91,5 +91,7 @@ public class Address {
         address.append("Shipping Address:\n" + shippingStreet + "\n" + shippingCity + ", " + shippingState + " " + shippingZip);*/
 
         System.out.println(address.toString());
+
+        myObj.close();
     }
 }
